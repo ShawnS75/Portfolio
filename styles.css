@@ -167,10 +167,14 @@ nav {
 }
 
 
+
+
 .about-me__info {
   display: flex;
   flex-direction: column;
 }
+
+
 
 
 .about-me__info--container {
@@ -183,6 +187,8 @@ nav {
 }
 
 
+
+
 .about-me__picture--mask {
   width: 100px;
   height: 100px;
@@ -192,6 +198,8 @@ nav {
   margin-bottom: 28px;
   animation: animate-profile-picture 800ms 200ms backwards;
 }
+
+
 
 
 @keyframes animate-profile-picture {
@@ -207,14 +215,20 @@ nav {
 }
 
 
+
+
 .about-me__picture {
   width: 100%;
+
+
 
 
   /* Improving my own picture */
   transform: scale(1.5);
   padding-top: 16px;
 }
+
+
 
 
 .about-me__info--title {
@@ -228,6 +242,8 @@ nav {
 }
 
 
+
+
 .about-me__link {
   font-size: 20px;
   color: #242424;
@@ -235,9 +251,13 @@ nav {
 }
 
 
+
+
 .about-me__links {
   animation: fade-up 650ms 800ms backwards;
 }
+
+
 
 
 @keyframes fade-up {
@@ -252,6 +272,8 @@ nav {
 }
 
 
+
+
 .about-me__img--container {
   flex: 1;
   display: flex;
@@ -259,8 +281,11 @@ nav {
 }
 .about-me__img {
   width: 100%;
+  margin: 50px auto;
   animation: fade-in 1200ms 800ms backwards;
 }
+
+
 
 
 @keyframes fade-in {
@@ -273,18 +298,26 @@ nav {
 }
 
 
+
+
 .wave {
   display: inline-block;
   animation: animate-wave 500ms infinite ease-in-out;
 }
 
 
+
+
 @keyframes animate-wave {
   0% {
     transform: rotate(0);
   }
-  50% {
+  50% 
+} 
+
 /* PROJECTS */
+
+
 
 
 .project {
@@ -292,15 +325,21 @@ nav {
 }
 
 
+
+
 .project:last-child {
   margin-bottom: 40px;
 }
+
+
 
 
 .project__img {
   width: 100%;
   transition: all 500ms ease;
 }
+
+
 
 
 .project__wrapper {
@@ -333,10 +372,14 @@ nav {
 }
 
 
+
+
 .project:hover .project__description {
   opacity: 1;
   transform: translateY(-50%);
 }
+
+
 
 
 .project__list {
@@ -344,11 +387,13 @@ nav {
 }
 
 
+
+
 .project__description {
   position: absolute;
   top: 50%;
   left: 90px;
-  transform: translateY(-50%);
+  transform: translateY(100%);
   max-width: 550px;
   z-index: 3;
   opacity: 0;
@@ -356,9 +401,13 @@ nav {
 }
 
 
+
+
 .project__description--title {
   font-size: 40px;
 }
+
+
 
 
 .project__description--para {
@@ -366,10 +415,14 @@ nav {
 }
 
 
+
+
 .project__description--link {
   font-size: 20px;
   margin-right: 16px;
 }
+
+
 
 
 .project__description--title,
@@ -381,12 +434,18 @@ nav {
 }
 
 
+
+
 /* FOOTER */
+
+
 
 
 footer {
   background-color: #242424;
 }
+
+
 
 
 .footer__social--list {
@@ -405,10 +464,14 @@ footer {
 }
 
 
+
+
 .footer__logo--img {
   width: 70px;
   height: 70px;
 }
+
+
 
 
 .footer__social--link,
@@ -416,6 +479,8 @@ footer {
 .footer__logo--popper {
   color: #fff;
 }
+
+
 
 
 .footer__logo--popper {
@@ -428,16 +493,22 @@ footer {
 }
 
 
+
+
 .footer__anchor {
   margin-bottom: 20px;
   position: relative;
 }
 
 
+
+
 .footer__anchor:hover .footer__logo--popper {
   transform: translateX(60px);
   opacity: 1;
 }
+
+
 
 
 /* Small phones, tablets, large smartphones */
@@ -447,9 +518,13 @@ footer {
   }
 
 
+
+
   h1 {
     font-size: 28px;
   }
+
+
 
 
   .about-me__info--para {
@@ -457,14 +532,20 @@ footer {
   }
 
 
+
+
   .language {
     width: calc(100% / 3);
   }
 
 
+
+
   .project__description--para {
     font-size: 14px;
   }
+
+
 
 
   .project__description {
@@ -474,6 +555,8 @@ footer {
 }
 
 
+
+
 /* SMALL PHONES */
 @media (max-width: 480px) {
   .nav__link:not(:last-child) {
@@ -481,9 +564,13 @@ footer {
   }
 
 
+
+
   .project__wrapper {
     border-radius: 0;
   }
+
+
 
 
   .project__description {
@@ -493,9 +580,13 @@ footer {
   }
 
 
+
+
   .project__description--para {
     display: none;
   }
+
+
 
 
   .project__description--links {
@@ -504,11 +595,15 @@ footer {
   }
 
 
+
+
   .project__description--title {
     font-size: 32px;
     line-height: 1;
     text-align: center;
   }
+
+
 
 
   .project__description--sub-title {
@@ -524,7 +619,11 @@ footer {
 }
 
 
+
+
 /* TECH - STACK */
+
+
 
 
 .language__img {
@@ -537,6 +636,8 @@ footer {
   opacity: 0.86;
   transform: scale(0.9);
 }
+
+
 
 
 .language {
@@ -553,12 +654,16 @@ footer {
 }
 
 
+
+
 .language__list {
   display: flex;
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
 }
+
+
 
 
 .language__name {
@@ -573,3 +678,4 @@ footer {
   transform: scale(1);
   opacity: 1;
 }
+
